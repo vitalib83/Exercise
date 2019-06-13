@@ -1,0 +1,75 @@
+
+
+    .main.menu{
+        border:1px solid coral;
+        height:75px;
+    }
+    .first.menu{
+        border:1px solid cornflowerblue;
+        padding: 0px;
+        height:500px;
+    }
+
+    .second.menu{
+        border:1px solid crimson;
+        height:75px;
+
+    }
+
+    .side{
+        border:1px solid chocolate;
+        display: inline-block;
+        background-color: chocolate;
+        width: 200px;
+        height:500px;
+        text-align: center;
+       
+    }
+
+    .small{
+        border:1px solid;
+        width: 170px;
+        display: inline-block;
+        height:470px;
+        position: absolute;
+        left: 20px;
+        top:100px;
+       
+  
+    }
+
+    .side2{
+        border:1px solid cadetblue;
+        display: inline-block;
+        height:470px;
+        width: calc(100% - 230px);
+        position: absolute;
+        
+    }    
+
+
+    @media screen and (max-width:500){
+        .side{
+            display:none;
+
+        
+    }
+    
+
+
+        
+        
+        
+     
+     
+    
+       
+       
+
+
+
+
+
+
+
+

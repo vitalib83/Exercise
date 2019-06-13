@@ -1,0 +1,16 @@
+div {
+    width:100px;
+    height:100px;
+    border:3px solid #444;
+    margin:4px;
+    display: inline-block;
+    float: left;
+    }
+    #box1 {
+    background: red;
+    
+    }
+    #box2 {
+    background: green;
+    
+    }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>java adv Ex 2</title>
+    </head>
+<body>
+   <main>
+    <label>Your Age Is:</label>
+    <input type="text" id="age" placeholder="18">
+    <button onclick="overeighteen()">Click Me!</button>
+    <span id="undereighteen"></span>
+   </main>
+   <script>
+        function overeighteen(){
+            var eighteen = "you are too young";
+            if(parseInt(document.getElementById("age").value)>=18){
+                eighteen = "you can drink"
+            }
+             
+            document.getElementById("undereighteen").innerHTML = eighteen;
+        }
+    </script>
+</body>
+</html>

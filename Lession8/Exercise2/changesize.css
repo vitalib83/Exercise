@@ -1,0 +1,20 @@
+
+    div{
+        width: 100px;
+        height: 100px;
+        background: purple;
+        transition: width 2s;
+        -webkit-transition: width 2s; /* Safari 3.1 to 6.0 */
+         display: flex
+         
+      }
+      
+      .text:hover {
+        width: 300px;
+        background-color: blue;
+        transition-timing-function: ease-in-out;
+      }
+}
+
+
+

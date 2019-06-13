@@ -1,0 +1,41 @@
+.distribution {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.distributionbox {
+  width: 300px;
+  background-color: black;
+  height: 500px;
+}
+
+.shrink {
+  height:100px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin:5px;
+
+}
+
+.shrinkbox1 {
+  height:100px;
+  width: 200px;
+  background-color: blue;
+  margin:5px;
+}
+.shrinkbox2 {
+  height:100px;
+  width: 200px;
+  flex-grow: 1;
+  background-color: blue;
+  margin:5px;
+}
+
+.shrinkbox3 {
+  height:100px;
+  width: 200px;
+  margin:5px;
+  flex-grow: 3;
+  background-color: blue;
+}

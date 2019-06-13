@@ -1,0 +1,10 @@
+div {
+    width: 150px;
+    height: 150px;
+    background:black;
+    transition: width 2s; ease-in-out 0.5s;
+  }
+  
+  div:hover {
+    width: 400px;
+  }

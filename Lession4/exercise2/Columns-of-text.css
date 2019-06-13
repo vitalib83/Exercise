@@ -1,0 +1,30 @@
+.item{
+    vertical-align:top;
+    text-align: left;
+    color: white;
+    display: inline-block;
+    width: 20%;
+    background-color:black;
+}
+
+
+.item .title{
+    font-size:20px;
+}
+
+
+@media screen and (max-width: 500px){
+
+.item{
+    display:block;
+    width: 80%;
+    margin: 20px auto;
+
+}
+
+
+
+
+
+
+

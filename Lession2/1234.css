@@ -1,0 +1,13 @@
+div{
+    width: 100px;
+    height: 200px;
+    background-color: brown;
+    border-style: 2px dotted grey;
+    position : relative; 
+}
+
+div.fox{
+    text-align: center;
+    line-height: 100px;
+    position : absolute;
+}

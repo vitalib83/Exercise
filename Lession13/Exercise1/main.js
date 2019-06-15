@@ -1,17 +1,35 @@
-var book1 = {
+function getSum(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
 
-    title:"foundation",
-    author:"isaac asimov",
-    year:"1951",
-    genre:"fiction",
-    getBookDescription: (book) => (`The book ${book1.title} was written by ${book1.author} in the ${book1.year}`)
-};
-    
-var book2 = {
-    
-    title:"book of coding",
-    author:"toti shmoti",
-    year:"2019",
-    pos
-    genre:"education";
-};
+function getSum2(arr){
+    return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+}
+
+
+function getSumNinja(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr[i].length; j++) {
+            sum += arr[i][j];
+        }
+    }
+    return sum;
+}
+
+function test_equal(actual, expected, msg) {
+    if (Array.isArray(expected)) {
+        for (var i = 0; i < expected.length; i++){
+            test_equal(actual[i], expected[i], "item in index " + i);
+        }
+    } else {
+        if (actual !== expected) {
+            console.log(`Error testing ${msg || ''}. expected: ${expected}, got ${actual}`)
+        }
+    }
+}
+

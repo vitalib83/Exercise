@@ -1,24 +1,13 @@
-function getSum(arr) {
-    var sum = 0;
-    for (var i = 0; i < arr.length; i++) {
-        sum += arr[i];
+function getLenghtOfStrings(words) {
+    var lengths = [];
+    for (var i = 0; i < words.length; i++) {
+        lengths[i] = words[i].length;
     }
-    return sum;
+    return lengths;
 }
 
-function getSum2(arr){
-    return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-}
-
-
-function getSumNinja(arr) {
-    var sum = 0;
-    for (var i = 0; i < arr.length; i++) {
-        for (var j = 0; j < arr[i].length; j++) {
-            sum += arr[i][j];
-        }
-    }
-    return sum;
+function lengthOfStringsNinja(words) {
+    return words.map(x => x.length);
 }
 
 function test_equal(actual, expected, msg) {
@@ -32,4 +21,3 @@ function test_equal(actual, expected, msg) {
         }
     }
 }
-

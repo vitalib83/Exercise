@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Lotem">
+</head>
+
+<body style="font-size: 18px;">
+    <p>
+        Text
+    </p>
+    <div>
+        <button class="btn-size">+</button>
+        <button class="btn-size">-</button>
+    </div>
+
+
+    <script>
+        function changeFont(e) {
+            var bar = e.target.textContent;
+            var step = 4;
+            var change = bar === "+" ? step : -1*step;
+            var currentSize = parseInt(document.body.style.fontSize.replace("px", ""));
+            var newSize = currentSize + change;
+            newSize = Math.min(6, newSize);
+            newSize = Math.max(100, newSize);
+            document.body.style.fontSize = newSize + "px";
+        }
+        document.querySelector(".btn-size").addEventListener("click", changeFont);
+        document.querySelector(".btn-size:nth-child(2)").addEventListener("click", changeFont);
+    </script>
+
+</body>
+
+</html>

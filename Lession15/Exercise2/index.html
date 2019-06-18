@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="itc">
+    <style>
+        #error {
+            display: none;
+        }
+
+        img {
+            padding: 0 10px;
+            width: 100px;
+        }
+
+        #smiley-container {
+            position: relative;
+            top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Smiley Faces</h2>
+    <input id="smiley-num" />
+    <button id="smiley-submit">submit</button>
+    <h4 id="error">Error : Please submit a number.</h4>
+    <div id="smiley-container"></div>
+    <script>
+        function addSmiley() {
+            var numberOfSmileys = document.getElementById("smiley-num").value;
+            if (isNaN(numberOfSmileys)) {
+                document.getElementById("error").style.display = "block";
+            }
+            else {
+                document.getElementById("error").style.display = "none";
+                var container = document.getElementById("smiley-container"); //should get the container once
+                while (container.firstChild) {
+                    container.removeChild(container.firstChild);
+                }
+                for (var i = 0; i < numberOfSmileys; i++) {
+                    var smiley = document.createElement("img");
+                    smiley.src = "https://image.freepik.com/free-icon/smiley_318-121680.jpg";
+                    container.appendChild(smiley);
+                }
+            }
+        }
+        // You should use addEventListener
+        document.getElementById("smiley-submit").addEventListener("click", addSmiley);         
+    </script>
+
+</body>
+
+</html>

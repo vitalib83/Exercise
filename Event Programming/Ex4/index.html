@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Check box</title>
+</head>
+
+<body>
+   
+    <input id="isImage" onchange="changeImage()" type="checkbox" checked/><br/>
+    <img id="image" src="https://www.happyfamilyart.com/wp-content/uploads/2015/03/LittleTree4v2.jpg"/>
+    
+    <script>
+        function changeImage() {
+            var isChecked = document.getElementById("isImage").checked;
+            var image = document.getElementById("image");
+            if (isChecked) {
+                image.style.visibility = "visible";
+            } else {
+                image.style.visibility = "hidden";
+            }
+        }
+    </script>
+</body>
+
+</html>

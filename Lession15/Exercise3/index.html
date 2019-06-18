@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Change Picture</title>
+
+    <style>
+        #image {
+            height: 250px;
+            width: 250px;
+            background-size: cover;
+            background-position: center;
+            margin: 10px 0;
+        }
+
+        .birds {
+            background-image: url("https://files.allaboutbirds.net/wp-content/uploads/2015/06/prow-featured.jpg");
+        }
+
+        .dogs {
+            background-image: url("http://santansun.com/wp-content/uploads/2018/11/5b7fdeab1900001d035028dc.jpeg");
+        }
+
+        .bears {
+            background-image: url("https://www.wikiality.com/file/2016/11/bears1.jpg");
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="image" class="birds"></div>
+    <button value="birds">1</button>
+    <button value="dogs">2</button>
+    <button value="bears">3</button>
+
+    <script>
+        var buttons = document.getElementsByTagName("button");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", changeBackgroundImage);
+        }
+
+        function changeBackgroundImage() {
+            var image =  document.getElementById("image");
+            var activeBackground = image.className;
+            image.classList.remove(activeBackground);
+            for (i = 0; i < buttons.length; i++) {
+                if (this === buttons[i]) {
+                    image.classList.add(buttons[i].value);
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

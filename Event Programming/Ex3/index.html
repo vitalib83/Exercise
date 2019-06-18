@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Text Area Field</title>
+</head>
+
+<body>
+  
+    <h3>Why are you interested in this position?</h3>
+    <textarea cols="40" rows="5" id="interest"></textarea>
+    <div>
+        <button onclick="verifyTextSize()">click here!</button>
+    </div>
+    <h5 id="message"></h5>
+    <script>
+        function verifyTextSize() {
+            var text = document.getElementById("interest").value;
+            var msg = document.getElementById("message");
+            if (text.length < 100) {
+                msg.innerHTML = "Please enter at least 100 characters";
+            } else {
+                msg.innerHTML = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

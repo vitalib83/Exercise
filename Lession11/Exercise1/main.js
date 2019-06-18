@@ -1,16 +1,13 @@
-var book1 = {
+function getBookDescription(book) {
+    return `The book ${book.name} was written by ${book.author} in the year ${book.year}`;
 
-    title:"foundation",
-    author:"isaac asimov",
-    year:"1951",
-    genre:"fiction",
-    getBookDescription: (book) => (`The book ${book1.title} was written by ${book1.author} in the ${book1.year}`)
-};
-    
-var book2 = {
-    
-    title:"book of coding",
-    author:"toti shmoti",
-    year:"2019",
-    genre:"education";
-};
+}
+
+var book = {
+    name: "foundation",
+    author: "Isaac Asimov",
+    year: 1951,
+    genre: "science fintion"
+}
+
+console.assert(getBookDescription(book) === "The book foundation was written by Isaac Asimov in the year 1951");

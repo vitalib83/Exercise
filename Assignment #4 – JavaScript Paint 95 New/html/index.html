@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Paint95</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="./../css/style.css">
+
+  
+</head>
+
+<body>
+
+  <nav id="toolbar">
+  <span id="radius-control"> 
+    <span class="glyphicon glyphicon-pencil"></span> <span id="radius-value">10</span>
+    <button id="radius-dec" type="button" class="btn btn-default btn-xs">
+      <span class="radius-control glyphicon glyphicon-minus"></span>
+    </button>
+    <button id="radius-inc" type="button" class="btn btn-default btn-xs">
+      <div id="radius-dec" class="radius-control glyphicon glyphicon-plus"></div>
+    </button>
+  </span>
+  <span id="color-control">
+				    <span class="color" data-color="black"></span>
+    <span class="color" data-color="red"></span>
+    <span class="color" data-color="orange"></span>
+    <span class="color" data-color="yellow"></span>
+    <span class="color" data-color="green"></span>
+    <span class="color" data-color="blue"></span>
+    <span class="color" data-color="purple"></span>
+    <span class="color" data-color="brown"></span>
+    <span class="color" data-color="gray"></span>
+    <span class="color" data-color="white"></span>
+  </span>
+  <span id="clear-control">
+				    <button id="clear-button" type="button" class="btn btn-danger">
+					      <span class="trash"></span> Clear
+    </button>
+  </span>
+  <span id="save-control">
+				    <button id="save-button" type="button" class="btn btn-primary">
+					      <span class="floppy-disk"></span> Save
+    </button>
+  </span>
+</nav>
+<div id="canvasDiv"></div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="./../js/script.js"></script>
+
+
+
+
+</body>
+
+</html>
